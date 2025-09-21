@@ -1,0 +1,15 @@
+#lyrics {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Playfair Display", serif; /* tipografía elegante */
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  max-width: 80%;
+  line-height: 1.6;
+}
