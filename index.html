@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Muak</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #fffde7, #ffe082);
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: #fffdf7;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            padding: 2rem;
+            max-width: 850px;
+            width: 90%;
+            text-align: center;
+            border: 2px solid #f7d26e;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .greetings span {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: bold;
+            color: #f4a300;
+            display: inline-block;
+            animation: float 1.5s infinite alternate;
+        }
+
+        .greetings span:nth-child(2n) {
+            animation-delay: 0.3s;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        .description {
+            margin-top: 1rem;
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-weight: 500;
+            color: #5a4d2f;
+        }
+
+        .image-box {
+            margin: 2rem auto;
+            max-width: 90%;
+            width: 380px;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            border: 3px solid #f4a300;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 5s ease;
+        }
+
+        .image-box img:hover {
+            transform: scale(1.05);
+        }
+
+        .message {
+            margin: 2rem auto;
+            max-width: 750px;
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            line-height: 1.9;
+            color: #4a3728;
+            padding: 0 1rem;
+            font-weight: 400;
+        }
+
+        .message strong {
+            color: #d17f00;
+            font-weight: 600;
+        }
+
+        .button {
+            margin-top: 2rem;
+        }
+
+        .button button {
+            background: #f4a300;
+            border: none;
+            padding: 0.9rem 2.5rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .button button:hover {
+            background: #ffbf47;
+            transform: scale(1.08);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .button a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="greetings">
+            <span>H</span>
+            <span>o</span>
+            <span>l</span>
+            <span>a</span>
+            <span>!</span>
+        </div>
+
+        <div class="description">
+            <span>Este detalle es para ti ❤</span>
+        </div>
+
+        <!-- Imagen de flores -->
+        <div class="image-box">
+            <img src="img/youandme.png" alt="Flores amarillas">
+        </div>
+
+        <!-- Mensaje íntimo -->
+        <div class="message">
+            <p>
+                Hoy el mundo se llena de flores amarillas, y aunque esta costumbre me parece hermosa, lo realmente yo más deseo
+                es que sepas algo:
+                <strong>no necesito una fecha especial para pensar en ti ni para amarte</strong>.
+            </p>
+            <p>
+                Te amo en el dia a dia, en lo natural y cotidiano, en lo que nadie celebra. Te amo en los instantes en que callo y
+                en los momentos en que sonrío sin que nadie sepa el por qué.
+                Te amo incluso en mis silencios, porque en todos ellos estás tú.
+            </p>
+            <p>
+                Lo importante no es que hoy se regalen flores, sino que <strong>tú eres la razón por la que mi vida
+                    florece todos los días</strong>.
+                Esta página, estas palabras y esta imagen no son más que un mero intento sencillo de decirte que eres mi
+                elección, mi certeza y mi todo.
+            </p>
+            <p>
+                Y aunque estas flores digitales no tengan aroma, quiero que las recibas como un símbolo de algo real:
+                <strong>mi amor por ti no depende de modas ni de fechas especiales</strong>.
+                Eres, sin duda, lo más hermoso que tengo. Muak.
+            </p>
+        </div>
+
+        <div class="button">
+            <button class="botones">
+                <a href="flower.html">Abrir tus flores ✨</a>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
